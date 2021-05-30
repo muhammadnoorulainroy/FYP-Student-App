@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.studentapp">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Login_Screen">
+        <activity android:name="com.example.studentapp.ChildAdd1"></activity>
+        <activity android:name="com.example.studentapp.Parent_DashBoard" />
+        <activity android:name="com.example.studentapp.ViewDriver" />
+        <activity android:name="com.example.studentapp.Fees" />
+        <activity android:name="com.example.studentapp.TrackVan" />
+        <activity android:name="com.example.studentapp.Schedule" />
+        <activity android:name="com.example.studentapp.Attendance" />
+        <activity android:name="com.example.studentapp.PreDashBoard" />
+        <activity android:name="com.example.studentapp.ViewExistingComplaints" />
+        <activity android:name="com.example.studentapp.P_Add_Complaint" />
+        <activity android:name="com.example.studentapp.P_Complaints" />
+        <activity android:name="com.example.studentapp.Add_Complaint" />
+        <activity android:name="com.example.studentapp.Complaints" />
+        <activity android:name="com.example.studentapp.DashBoard" />
+        <activity android:name="com.example.studentapp.Parent_FP_SuccessMessage" />
+        <activity android:name="com.example.studentapp.Parent_SetNewPassword" />
+        <activity android:name="com.example.studentapp.Parent_FPVerifyOTP" />
+        <activity android:name="com.example.studentapp.Parent_ForgetPassword" />
+        <activity android:name="com.example.studentapp.Parent_Verify_OTP" />
+        <activity android:name="com.example.studentapp.Parent_Signup2" />
+        <activity android:name="com.example.studentapp.Parent_Signup" />
+        <activity android:name="com.example.studentapp.Parent_login" />
+        <activity android:name="com.example.studentapp.Parent_MainActivity" />
+        <activity android:name="com.example.studentapp.Splash_Screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.studentapp.MakeUserSelection" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name="com.example.studentapp.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name="com.example.studentapp.FPVerifyOTP" />
+        <activity android:name="com.example.studentapp.ForgetPasswordSuccessMessage" />
+        <activity android:name="com.example.studentapp.SetNewPassword" />
+        <activity android:name="com.example.studentapp.MakeSelection" />
+        <activity android:name="com.example.studentapp.ForgetPassword" />
+        <activity android:name="com.example.studentapp.Verify_OTP" />
+        <activity android:name="com.example.studentapp.Sign_up_3rdClass" />
+        <activity android:name="com.example.studentapp.SignUp2ndClass" />
+        <activity android:name="com.example.studentapp.Signup" />
+        <activity android:name="com.example.studentapp.Login" />
+        <activity android:name="com.example.studentapp.MainActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+    </application>
+
+</manifest>

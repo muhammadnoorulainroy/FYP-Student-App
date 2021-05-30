@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="30dp"
+    tools:context=".MakeSelection">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/close_icon"
+                app:tint="@color/black">
+            </ImageView>
+            <Button
+                android:id="@+id/signup_back_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@color/material_on_surface_stroke"
+                android:onClick="callBack">
+
+            </Button>
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/forget_password_txt"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="36sp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/make_selection_desc"
+            android:textSize="18sp">
+
+        </TextView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/lightWhite"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/mobile_icon"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/smartphone">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/mobile_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@id/mobile_icon"
+                android:text="@string/vis_sms"
+                android:textSize="25sp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mobile_text"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/mobile_icon"
+                android:text="92345677988"
+                android:textColor="@color/black"
+                android:textSize="25sp">
+
+            </TextView>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/material_on_surface_stroke"
+                android:onClick="callOTPScreen">
+
+            </Button>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="35dp"
+            android:background="@color/lightWhite"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/email_icon"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/general_email">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/email_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@id/email_icon"
+                android:text="@string/vis_email"
+                android:textSize="25sp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/email_text"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/email_icon"
+                android:text="support@gmail.com"
+                android:textColor="@color/black"
+                android:textSize="25sp">
+
+            </TextView>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/material_on_surface_stroke"
+                android:onClick="callOTPScreen">
+
+            </Button>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

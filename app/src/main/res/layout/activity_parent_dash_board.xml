@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightWhite"
+    android:orientation="vertical"
+    tools:context=".Parent_DashBoard">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:orientation="vertical"
+        android:stateListAnimator="@null">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:id="@+id/ly1"
+            android:background="@drawable/layout"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_marginBottom="30dp">
+
+
+            <TextView
+                android:id="@+id/dashboard_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="36dp"
+                android:text="Childrens"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="38sp"
+                android:transitionName="transition_crrate_button" />
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_asset_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="16dp"
+            android:background="@color/Transparent"
+            android:backgroundTint="#006400"
+            android:contentDescription="Add Children"
+            android:onClick="callAddChild"
+            android:src="@drawable/ic_add"
+            android:tooltipText="Click to Add Children"
+            app:fabCustomSize="80dp"
+            app:fabSize="auto"
+            app:maxImageSize="60dp"
+            app:rippleColor="@color/white">
+
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/precycler_View"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:layout_below="@id/ly1"
+            android:scrollbars="vertical">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+
+</ScrollView>
